@@ -56,6 +56,7 @@ extra:
     - avoid_noarch    
     - missing_source_tracking # ProServe build
     - missing_hash  # only during initial build
+    - reachable_url # false positive
 
   anaconda-services:
     recipe-maintainers:
