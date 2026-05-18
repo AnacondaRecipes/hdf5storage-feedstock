@@ -1,6 +1,5 @@
 {% set name = "hdf5storage" %}
-{% set version = "0.1.19" %}
-{% set sha256 = "7a1a6badf546e8942f4d22d598aee14021796bc28918519c9687a6abb0eeef86" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.zip
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  #sha256: {{ sha256 }}
 
 build:
   noarch: python
@@ -24,7 +23,7 @@ requirements:
 
   run:
     - python >=2.6
-    - h5py >=2.3
+    - h5py >=3.3
     - numpy
     - scipy
 
