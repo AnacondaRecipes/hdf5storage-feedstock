@@ -36,6 +36,8 @@ test:
     - pip
   imports:
     - hdf5storage
+  commands:
+    - pip check
 
 about:
   home: https://github.com/frejanordsiek/hdf5storage
@@ -50,7 +52,6 @@ about:
 extra:
   recipe-maintainers:
     - jakirkham
-extra:
   skip-lints:
     - missing_source
     - avoid_noarch    
