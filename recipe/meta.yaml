@@ -53,7 +53,6 @@ extra:
   recipe-maintainers:
     - jakirkham
   skip-lints:
-    - missing_source
     - avoid_noarch    
     - missing_source_tracking # ProServe build
     - missing_hash  # only during initial build
